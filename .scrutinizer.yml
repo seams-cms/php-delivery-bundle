@@ -4,6 +4,14 @@ tools:
     external_code_coverage: true
     sensiolabs_security_checker:
         enabled: true
+        
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - php-scrutinizer-run
+          - phpcs-run          
 
 filter:
     excluded_paths:
@@ -12,4 +20,4 @@ filter:
         - 'app/*'
         - 'bin/*'
         - 'library/*'
-        - 'Tests/*'
+        - 'tests/*'
