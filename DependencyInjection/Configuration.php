@@ -38,6 +38,8 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('workspace')
                             ->isRequired()
                         ->end()
+                        ->arrayNode('options')
+                        ->end()
                     ->end()
                 ->end()
             ->end()
