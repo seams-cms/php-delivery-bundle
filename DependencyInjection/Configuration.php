@@ -39,6 +39,7 @@ class Configuration implements ConfigurationInterface
                             ->isRequired()
                         ->end()
                         ->arrayNode('options')
+                            ->scalarPrototype()->end()
                         ->end()
                     ->end()
                 ->end()
