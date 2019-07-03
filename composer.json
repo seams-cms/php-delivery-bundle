@@ -9,6 +9,11 @@
             "email": "info@seams-cms.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "SeamsCMS\\DeliveryBundle\\": "."
+        }
+    },
     "require": {
         "php": "^7.0",
         "seams-cms/delivery-sdk": "^0.0.2"
